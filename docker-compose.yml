@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  database:
+    image: mongo:3.4
+    volumes:
+      - .database:/data/db
+
+  api:
+    build: ./api
+    ports:
+      - 7777:7777
+    volumes:
+      - ./api:/api
+    depends_on:
+      - database

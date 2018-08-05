@@ -1,0 +1,23 @@
+{
+  "name": "formidable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "semantic-commit": "semantic-commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffersondanielss/formidable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffersondanielss/formidable/issues"
+  },
+  "homepage": "https://github.com/jeffersondanielss/formidable#readme",
+  "dependencies": {
+    "semantic-commit": "^0.2.1"
+  }
+}
