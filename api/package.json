@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api para servir os formularios",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server/index.js",
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "koa": "^2.5.2",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "chai-http": "^4.0.0"
+  }
+}
