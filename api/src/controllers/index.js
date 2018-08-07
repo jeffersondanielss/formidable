@@ -6,9 +6,7 @@ const base = async (ctx) => {
 }
 
 const teste = async (ctx) => {
-  ctx.body = {
-    status: 'teste'
-  };
+  ctx.body = await ctx.mongo.db('test').collection('users').find().toArray();
 }
 
 module.exports = { base, teste }
