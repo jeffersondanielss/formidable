@@ -1,12 +1,30 @@
-const base = async (ctx) => {
+const root = async (ctx) => {
   ctx.body = {
-    status: 'success',
-    message: 'hello, world!'
-  };
+
+    "questions": [
+      {
+        "label": "Qual seu nome?",
+        "type": "input",
+        "placeholder": "Digite seu nome"
+      },
+      {
+        "label": "Qual sua idade?",
+        "type": "select",
+        "options": [
+          {
+            "label": "Maior de 18 anos",
+            "value": "1"
+          },
+          {
+            "label": "Menor de 18 anos",
+            "value": "0"
+          }
+        ]
+      }
+
+    ]
+
+  }
 }
 
-const teste = async (ctx) => {
-  ctx.body = await ctx.mongo.db('test').collection('users').find().toArray();
-}
-
-module.exports = { base, teste }
+module.exports = { root }

@@ -1,6 +1,5 @@
-const { base, teste } = require('../controllers')
+const { root } = require('../controllers')
 
 module.exports = (router) => {
-  router.get('/', base);
-  router.get('/teste/', teste);
+  router.get('/', root);
 }
