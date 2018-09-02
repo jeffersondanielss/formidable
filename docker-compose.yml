@@ -14,3 +14,10 @@ services:
       - ./api:/api
     depends_on:
       - database
+
+  forms:
+    build: ./forms
+    ports:
+      - 8080:8080
+    volumes:
+      - ./forms:/forms
